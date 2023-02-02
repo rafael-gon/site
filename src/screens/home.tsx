@@ -1,21 +1,22 @@
 import { Button } from '@/components/button'
 import { Header } from '@/components/header'
 import { Links } from '@/components/links'
+import Link from 'next/link'
 
 export function Home() {
   return (
     <div className='flex flex-col gap-8 items-center'>
       <Header />
-      <a href="/buildPage">
+      <Link href="/buildPage">
         <Button title="Projects"/>
-      </a>
-      <a href="/buildPage">
+      </Link>
+      <Link href="/buildPage">
         <Button title="Certificates"/>
-      </a>
+      </Link>
       <Links />
-      <a href="https://www.buymeacoffee.com/rafaelgon" target={'_blank'}>
+      <Link href="https://www.buymeacoffee.com/rafaelgon">
         <Button title="Suporte me"/>
-      </a>
+      </Link>
     </div>
   )
 }
