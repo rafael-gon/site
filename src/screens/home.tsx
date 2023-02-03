@@ -14,7 +14,7 @@ export function Home() {
         <Button title="Certificates"/>
       </Link>
       <Links />
-      <Link href="https://www.buymeacoffee.com/rafaelgon">
+      <Link href="https://www.buymeacoffee.com/rafaelgon" target={"_blank"}>
         <Button title="Suporte me"/>
       </Link>
     </div>
