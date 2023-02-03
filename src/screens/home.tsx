@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export function Home() {
   return (
-    <div className='flex flex-col gap-8 items-center'>
+    <div className='flex flex-col gap-8 items-center z-50'>
       <Header />
       <Link href="/buildPage">
         <Button title="Projects"/>
