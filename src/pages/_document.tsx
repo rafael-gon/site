@@ -9,7 +9,7 @@ class MyDocument extends Document {
 
   render(): React.ReactElement {
     return (
-      <Html leng="Pt-Br">
+      <Html lang="Pt-Br">
         <Head>
           
           <meta name="msapplication-TileColor" content="#18181b" />
