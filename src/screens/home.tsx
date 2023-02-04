@@ -10,7 +10,7 @@ export function Home() {
       <Link href="/projects">
         <Button title="Projects"/>
       </Link>
-      <Link href="/buildPage">
+      <Link href="/certificates">
         <Button title="Certificates"/>
       </Link>
       <Links />

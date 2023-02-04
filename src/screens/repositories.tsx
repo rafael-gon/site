@@ -26,9 +26,6 @@ export function Repositories(){
   }, []);
 
 
-  console.log(repo?.language)
-
-
   return(
     <div className='h-full bg-zinc-900 text-zinc-200 flex flex-col justify-center items-center text-center gap-10 p-8'>
       <Link href="/" >
@@ -42,24 +39,3 @@ export function Repositories(){
     </div>
   )
 }
-
-// class Dog extends Component {
-
-
-
-//   async componentDidMount() {
-//       const response = await api.get('')
-//   }
-
-
-//   render() {
-//       const { caes } = this.state;
-
-//       return (
-//           <div className='' >
-//           </div>
-//       )
-//   }
-// }
-
-// export default Dog

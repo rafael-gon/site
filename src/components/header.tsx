@@ -1,5 +1,5 @@
-import { Icon } from "@/img/icon";
-import { Name } from "@/img/name";
+import { Icon } from "public/img/icon";
+import { Name } from "public/img/name";
 
 export function Header(){
   return(
