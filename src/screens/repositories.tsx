@@ -9,6 +9,7 @@ interface repoInfo{
   description: string;
   html_url: string;
   language: string;
+  map: any;
 }
 
 export function Repositories(){
@@ -34,8 +35,8 @@ export function Repositories(){
         <CaretLeft className="md:text-[5rem] md:m-8 text-2xl m-4 z-50 top-0 left-0 fixed text-[#F5D0FE] hover:text-[#d63efb] transition-all"/>
       </Link>
       {
-        repo?.map((repo) => (
-          <Repositorie key={repo.id} name={repo?.name} desc={repo?.description} leng={repo?.language} html_url={repo?.html_url}/>
+        repo?.map((repo: { id: any; name: any; description: any; language: any; html_url: any; }) => (
+          <Repositorie key={repo.id} name={repo?.name} desc={repo?.description} lang={repo?.language} html_url={repo?.html_url}/>
         ))
       }
     </div>

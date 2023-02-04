@@ -3,24 +3,24 @@ import Link from "next/link"
 
 export function Repositorie(props: any){
 
-  let leng = props.leng
+  let lang = props.lang
   let link = ""
 
-  if (leng != null){
-    leng = leng.toLowerCase()
-    link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${leng}/${leng}-plain.svg`
-    if (leng == "css"){
-      leng = "css3"
-      link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${leng}/${leng}-plain.svg`
+  if (lang != null){
+    lang = lang.toLowerCase()
+    link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang}/${lang}-plain.svg`
+    if (lang == "css"){
+      lang = "css3"
+      link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang}/${lang}-plain.svg`
 
-    }else if (leng == "html"){
-      leng = "html5"
-      link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${leng}/${leng}-plain.svg`
+    }else if (lang == "html"){
+      lang = "html5"
+      link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang}/${lang}-plain.svg`
 
     }
   }else{
-    leng = "markdown"
-    link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${leng}/${leng}-original.svg`
+    lang = "markdown"
+    link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang}/${lang}-original.svg`
   }
   
   return(
