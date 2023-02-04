@@ -7,7 +7,7 @@ export function Home() {
   return (
     <div className='flex flex-col gap-8 items-center z-50'>
       <Header />
-      <Link href="/buildPage">
+      <Link href="/projects">
         <Button title="Projects"/>
       </Link>
       <Link href="/buildPage">
