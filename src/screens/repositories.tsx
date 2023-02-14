@@ -27,7 +27,7 @@ export function Repositories(){
 
 
   return(
-    <div className='h-full bg-zinc-900 text-zinc-200 flex flex-col justify-center items-center text-center gap-10 p-8'>
+    <div className='h-full text-zinc-200 flex flex-col justify-center items-center text-center gap-10 p-8'>
       <Link href="/" >
         <CaretLeft className="md:text-[5rem] md:m-8 text-2xl m-4 z-50 top-0 left-0 fixed text-[#F5D0FE] hover:text-[#d63efb] transition-all"/>
       </Link>

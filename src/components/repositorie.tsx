@@ -24,7 +24,9 @@ export function Repositorie(props: any){
   }
   
   return(
-    <Link href={props.html_url} className="sm:w-[40rem] sm:p-16 p-8 w-full z-40 flex flex-col gap-4 items-center border-2 border-[#F5D0FE] text-[#F5D0FE] backdrop-blur-3xl rounded hover:border-[#d63efb] transition-all">
+    <Link href={props.html_url} target={"_blank"}
+      className="sm:w-[40rem] sm:p-16 p-8 w-full z-40 flex flex-col gap-4 items-center border-2 shadow-xl border-[#F5D0FE] text-[#F5D0FE] backdrop-blur-3xl rounded hover:text-[#d63efb] hover:border-[#d63efb] transition-all"
+    >
 
       <Image src={link} alt="linguage icon" width={100} height={100}/>
           

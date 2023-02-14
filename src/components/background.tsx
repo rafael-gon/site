@@ -1,12 +1,11 @@
-import { CircleBotton, CircleTop } from "./circles";
-import { Noise } from "./noise";
+import { Waves } from "./waves";
+import { Poly } from "./poly";
 
-export function Background(props: any){
+export function Background(){
   return(
-    <div {...props}>
-      <Noise />
-      <CircleTop />
-      <CircleBotton />
+    <div>
+      <Poly />
+      <Waves />
     </div>
   )
 }

@@ -3,9 +3,8 @@ import { Repositories } from "@/screens/repositories";
 
 export default function Projects(){
   return(
-    <div>
+    <div className="min-h-screen bg-zinc-900">
       <Repositories />
-      
       <Background />
     </div>
   )
