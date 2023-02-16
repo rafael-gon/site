@@ -1,5 +1,6 @@
 import React from 'react';
 import Document, { Html, Head, NextScript, DocumentContext, DocumentInitialProps, Main } from 'next/document';
+import { Background } from '@/components/background';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
@@ -21,6 +22,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
+          <Background />
           <NextScript />
         </body>
       </Html>

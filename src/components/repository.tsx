@@ -1,27 +1,18 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export function Repositorie(props: any){
+export function Repository(props: any){
 
-  let lang = props.lang
   let link = ""
 
-  if (lang != null){
-    lang = lang.toLowerCase()
-    link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang}/${lang}-plain.svg`
-    if (lang == "css"){
-      lang = "css3"
-      link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang}/${lang}-plain.svg`
-
-    }else if (lang == "html"){
-      lang = "html5"
-      link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang}/${lang}-plain.svg`
-
+  if (props.lang != null){
+    link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${props.lang.toLowerCase()}/${props.lang.toLowerCase()}-plain.svg`
+    if (props.lang == "CSS"){
+      link = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+    } else if (props.lang == "HTML"){
+      link = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
     }
-  }else{
-    lang = "markdown"
-    link = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang}/${lang}-original.svg`
-  }
+  } else link = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"
   
   return(
     <Link href={props.html_url} target={"_blank"}
