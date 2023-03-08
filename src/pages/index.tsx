@@ -2,10 +2,12 @@ import Link from 'next/link'
 import { Button } from '@/components/button'
 import { Header } from '@/components/header'
 import { Links } from '@/components/links'
+import Head from 'next/head'
 
 export default function Index() {
   return (
     <div className='min-h-screen bg-zinc-900 flex flex-col justify-center items-center text-center'>
+      <Head><title>Rafael | Home</title></Head>
       <div className='flex flex-col gap-8 items-center z-50 backdrop-blur-sm shadow-2xl p-16 rounded border-2 border-[#F5D0FE]'>
         
       <Header />

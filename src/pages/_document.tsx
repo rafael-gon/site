@@ -12,13 +12,10 @@ class MyDocument extends Document {
     return (
       <Html lang="Pt-Br">
         <Head>
-          
           <meta name="msapplication-TileColor" content="#18181b" />
           <meta name="theme-color" content="#F5D0FE" />
           <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
           <meta name="description" content="Site pessoal criado por Rafael Goncalves" />
-          <title>Rafael</title>
-          
         </Head>
         <body>
           <Main />

@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import { CaretLeft } from 'phosphor-react'
 import { Paper } from '@/components/paper'
+import Head from 'next/head'
 
 export default function Certificates() {
   return (
     <div className='min-h-screen bg-zinc-900 flex flex-col items-center text-center'>
+      <Head><title>Rafael | Certificates</title></Head>
       <div className="z-50 flex flex-col gap-10 m-8">
       <Link href="/" >
         <CaretLeft className="md:text-[5rem] md:m-8 text-2xl m-4 z-50 top-0 left-0 fixed text-[#F5D0FE] hover:text-[#d63efb] transition-all"/>
