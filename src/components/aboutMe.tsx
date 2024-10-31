@@ -1,5 +1,10 @@
 import Image from 'next/image'
+import { Saira } from 'next/font/google'
 
+const saira = Saira({
+  subsets: ['latin'],
+  weight: ['500', '600', '700', '800', '900'],
+})
 export default function AboutMe() {
   return (
     <div className="flex h-screen items-center justify-center gap-12">
@@ -15,8 +20,8 @@ export default function AboutMe() {
           />
           <div className="flex w-[32rem] flex-col gap-8">
             <div className="flex flex-col gap-2">
-              <p className="text-4xl font-black uppercase">Rafael Gonçalves</p>
-              <p className="text-accents text-lg font-normal">
+              <p className="text-4xl font-bold uppercase">Rafael Gonçalves</p>
+              <p className={`${saira.className} text-accents text-lg font-normal`}>
                 Fullstack Developer
               </p>
             </div>
@@ -40,7 +45,7 @@ export default function AboutMe() {
           <a
             href="https://linkedin.com/in/rafael-gon"
             target="_blank"
-            className="bg-accents rounded bg-opacity-5 px-4 py-2 backdrop-blur transition-all hover:brightness-125"
+            className={`${saira.className} bg-accents rounded bg-opacity-5 px-4 py-2 backdrop-blur transition-all hover:brightness-125`}
             rel="noreferrer"
           >
             Linkedin
@@ -48,7 +53,7 @@ export default function AboutMe() {
           <a
             href="https://github.com/rafael-gon"
             target="_blank"
-            className="bg-accents rounded bg-opacity-5 px-4 py-2 backdrop-blur transition-all hover:brightness-125"
+            className={`${saira.className} bg-accents rounded bg-opacity-5 px-4 py-2 backdrop-blur transition-all hover:brightness-125`}
             rel="noreferrer"
           >
             Github

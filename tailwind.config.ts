@@ -10,11 +10,12 @@ const config: Config = {
     colors: {
       background: '#2C2C2A45',
       foreground: '#FFF3F3',
-      accents: '#A07CFF',
+      accents: '#C3ACFF',
+      secondary: '#FFF9AB',
     },
     extend: {
       backgroundImage: {
-        photo: 'url(/assets/Background.jpg)',
+        photo: 'url(/assets/Background.png)',
       },
     },
   },

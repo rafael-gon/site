@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Saira } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({
@@ -17,6 +17,8 @@ const inter = Inter({
     '900',
   ],
 })
+
+
 
 export const metadata: Metadata = {
   title: 'Rafael',
