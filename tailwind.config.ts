@@ -15,7 +15,7 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        photo: 'url(/assets/Background.png)',
+        photo: 'url(/assets/Background.jpg)',
       },
     },
   },
